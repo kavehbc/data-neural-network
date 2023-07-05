@@ -13,7 +13,9 @@ dependencies:
   - plotly
   - sqlalchemy
   - jupyterlab
+  - tqdm
   - pip
   - pip:
       - streamlit
       - pandas-downcast
+      - pandarallel
