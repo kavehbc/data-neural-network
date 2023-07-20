@@ -15,9 +15,9 @@ dependencies:
   - jupyterlab
   - tqdm
   - lightgbm
-  - graphviz
   - pip
   - pip:
       - streamlit
+      - graphwiz
       - pandas-downcast
       - pandarallel
