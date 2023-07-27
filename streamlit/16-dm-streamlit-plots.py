@@ -16,10 +16,12 @@ def main():
     x = st.sidebar.selectbox("X", options=df_titanic.columns)
     y = st.sidebar.selectbox("Y", options=df_titanic.columns)
     color = st.sidebar.selectbox("Color", options=df_titanic.columns)
-
-    fig = px.violin(df_titanic, x=x, y=y, color=color, points='all', box=True)
-    # fig.show()
-    st.plotly_chart(fig, use_container_width=True)
+    
+    btn_plot = st.sidebar.button("Plot")
+    if btn_plot:
+        fig = px.scatter(df_titanic, x=x, y=y, color=color)
+        # fig.show()
+        st.plotly_chart(fig, use_container_width=True)
 
         
 if __name__ == "__main__":

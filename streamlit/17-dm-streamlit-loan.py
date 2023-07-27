@@ -15,7 +15,8 @@ def main():
     ApplicantIncome = st.sidebar.number_input("Applicant Income")
     CoapplicantIncome = st.sidebar.number_input("Coapplicant Income")
     LoanAmount = st.sidebar.number_input("Loan Amount")
-    Loan_Amount_Term = st.sidebar.selectbox("Loan Term", options=[360.0, 120.0, 240.0, 180.0, 60.0, 300.0, 480.0, 36.0, 84.0, 12.0])
+    Loan_Amount_Term = st.sidebar.selectbox("Loan Term", options=[360.0, 120.0, 240.0, 180.0,
+                                                                  60.0, 300.0, 480.0, 36.0, 84.0, 12.0])
     Credit_History = st.sidebar.selectbox("Credit History", options=[1, 0])
     Gender = st.sidebar.selectbox("Gender", options=["Male", "Female"])
     Married = st.sidebar.checkbox("Married", value="Yes")
@@ -37,11 +38,11 @@ def main():
 
     # creating a dataframe containing user inputs
     df = pd.DataFrame(data=[[ApplicantIncome, CoapplicantIncome, LoanAmount, Loan_Amount_Term,
-                                 Credit_History, Gender, Married, Dependents,
-                                 Education, Self_Employed, Property_Area]],
-                            columns=["ApplicantIncome", "CoapplicantIncome", "LoanAmount", "Loan_Amount_Term",
-                                    "Credit_History", "Gender", "Married", "Dependents",
-                                    "Education", "Self_Employed", "Property_Area"])
+                             Credit_History, Gender, Married, Dependents,
+                             Education, Self_Employed, Property_Area]],
+                      columns=["ApplicantIncome", "CoapplicantIncome", "LoanAmount", "Loan_Amount_Term",
+                               "Credit_History", "Gender", "Married", "Dependents",
+                               "Education", "Self_Employed", "Property_Area"])
     st.subheader("Original Dataframe")
     st.write(df)
     
@@ -61,7 +62,7 @@ def main():
     
     # apply scaler
     columns_to_scale = ["ApplicantIncome", "CoapplicantIncome",
-                    "LoanAmount", "Loan_Amount_Term"]
+                        "LoanAmount", "Loan_Amount_Term"]
     
     df[columns_to_scale] = scaler.transform(df[columns_to_scale])
     
