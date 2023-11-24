@@ -21,3 +21,4 @@ dependencies:
       - graphwiz
       - pandas-downcast
       - pandarallel
+      - nltk
