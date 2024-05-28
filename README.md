@@ -1,7 +1,9 @@
 # Data Management &amp; Neural Network
 
-This repository contains Jupyter Notebooks and Python source code to teach and practice Data Management using pandas
-(or similar packages), and Neural Network.
+This repository contains Jupyter Notebooks and Python source code to teach and practice the following courses in LaSalle College:
+
+- Advanced Data Management (420-A15-AS)<br />
+- Machine Learning and Neural Networks (420-A16-AS)
 
 ## Notebooks
 
