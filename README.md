@@ -1,6 +1,6 @@
 # Advanced Data Management &amp; Neural Networks
 
-This repository contains Jupyter Notebooks and Python source codes for the following courses in LaSalle College:
+This repository contains Jupyter Notebooks and Python source codes for the following courses in LaSalle College, Montreal:
 
 - Advanced Data Management (420-A15-AS)<br />
 - Machine Learning and Neural Networks (420-A16-AS)
@@ -29,3 +29,8 @@ This repository contains Jupyter Notebooks and Python source codes for the follo
 
 - `16-dm-streamlit-plots.ipynb`
 - `17-dm-streamlit-loan.ipynb`
+
+___
+## Lecturer
+Kaveh Bakhtiyari - [Website](http://bakhtiyari.com) | [Medium](https://medium.com/@bakhtiyari)
+  | [LinkedIn](https://www.linkedin.com/in/bakhtiyari) | [GitHub](https://github.com/kavehbc)
