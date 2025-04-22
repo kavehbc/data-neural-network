@@ -1,21 +1,24 @@
-name: machine-learning
+name: ai
 channels:
   - defaults
   - anaconda
   - conda-forge
 dependencies:
   - python=3.9
-  - jupyterlab
-  - jupyterlab_widgets
-  - ipywidgets
   - numpy
   - pandas
   - scikit-learn
-  - optuna
+  - seaborn
+  - matplotlib
   - plotly
-  - scipy
+  - sqlalchemy
+  - jupyterlab
+  - tqdm
+  - lightgbm
   - pip
   - pip:
       - streamlit
-      - botorch
-      - python-constraint
+      - graphwiz
+      - pandas-downcast
+      - pandarallel
+      - nltk
